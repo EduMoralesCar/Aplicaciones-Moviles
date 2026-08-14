@@ -13,13 +13,17 @@ export default function HomeScreen() {
     <View style={styles.container}>
       <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.scrollContent}>
         
-        {/* Logo UTP estilo "A" geométrico */}
+        {/* Logo UTP estilo institucional */}
         <View style={styles.logoContainer}>
-          <View style={styles.logoBox}>
-            <View style={styles.logoA}>
-              <View style={styles.logoLeftLeg} />
-              <View style={styles.logoRightLeg} />
-              <View style={styles.logoCrossbar} />
+          <View style={styles.logoBrandRow}>
+            <View style={styles.logoBlockRed}>
+              <Text style={styles.logoLetter}>U</Text>
+            </View>
+            <View style={styles.logoBlockBlack}>
+              <Text style={styles.logoLetter}>T</Text>
+            </View>
+            <View style={styles.logoBlockRed}>
+              <Text style={styles.logoLetter}>P</Text>
             </View>
           </View>
           <Text style={styles.universityName}>Universidad Tecnológica del Perú</Text>
@@ -86,13 +90,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 20,
   },
-  logoBox: {
-    backgroundColor: '#c41e3a',
-    borderRadius: 20,
-    width: 140,
-    height: 140,
-    justifyContent: 'center',
-    alignItems: 'center',
+  logoBrandRow: {
+    flexDirection: 'row',
+    borderRadius: 14,
+    overflow: 'hidden',
     marginBottom: 16,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 8 },
@@ -100,49 +101,34 @@ const styles = StyleSheet.create({
     shadowRadius: 16,
     elevation: 8,
   },
-  logoA: {
-    width: 100,
-    height: 100,
+  logoBlockRed: {
+    width: 92,
+    height: 92,
+    backgroundColor: '#c41e3a',
     justifyContent: 'center',
     alignItems: 'center',
-    position: 'relative',
   },
-  logoLeftLeg: {
-    position: 'absolute',
-    width: 12,
-    height: 80,
-    backgroundColor: '#ffffff',
-    left: 20,
-    top: 10,
-    transform: [{ rotate: '-20deg' }],
-    borderRadius: 6,
+  logoBlockBlack: {
+    width: 92,
+    height: 92,
+    backgroundColor: '#02050b',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
-  logoRightLeg: {
-    position: 'absolute',
-    width: 12,
-    height: 80,
-    backgroundColor: '#ffffff',
-    right: 20,
-    top: 10,
-    transform: [{ rotate: '20deg' }],
-    borderRadius: 6,
-  },
-  logoCrossbar: {
-    position: 'absolute',
-    width: 60,
-    height: 10,
-    backgroundColor: '#ffffff',
-    top: 55,
-    borderRadius: 5,
+  logoLetter: {
+    color: '#ffffff',
+    fontSize: 58,
+    fontWeight: '900',
+    lineHeight: 62,
   },
 
   universityName: {
-    fontSize: 18,
-    fontWeight: '700',
+    fontSize: 26,
+    fontWeight: '900',
     color: '#f8fafc',
     textAlign: 'center',
-    marginBottom: 0,
-    letterSpacing: 0.5,
+    marginBottom: 2,
+    lineHeight: 30,
   },
 
   // Info card styles
