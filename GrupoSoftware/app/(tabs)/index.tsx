@@ -1,11 +1,11 @@
 ﻿import { ScrollView, StyleSheet, Text, View } from 'react-native';
 
-// Nombres en orden alfabético
+// Integrantes con código institucional
 const integrantes = [
-  'Edu Morales Carlos',
-  'Guétierrez Cuéllar Josuée Ángel',
-  'Hurtado Lorenzo Ronal Dany',
-  'Taypicahuana Montalvo Renzo Andre',
+  { nombre: 'Taypicahuana Montalvo Renzo Andre', codigo: 'U23200248' },
+  { nombre: 'Morales Carlos Edu', codigo: 'U23222093' },
+  { nombre: 'Hurtado Lorenzo Ronal Dany', codigo: 'U20238833' },
+  { nombre: 'Gutiérrez Cuéllar Josué Ángel', codigo: 'U23219921' },
 ];
 
 export default function HomeScreen() {
@@ -37,6 +37,11 @@ export default function HomeScreen() {
           </View>
           <View style={styles.divider} />
           <View style={styles.infoRow}>
+            <Text style={styles.label}>Facultad:</Text>
+            <Text style={styles.value}>Facultad de Ingeniería</Text>
+          </View>
+          <View style={styles.divider} />
+          <View style={styles.infoRow}>
             <Text style={styles.label}>Curso:</Text>
             <Text style={styles.value}>Aplicaciones Móviles</Text>
           </View>
@@ -56,12 +61,15 @@ export default function HomeScreen() {
         <Text style={styles.sectionTitle}>Integrantes del Grupo</Text>
 
         {/* Lista de integrantes */}
-        {integrantes.map((nombre, index) => (
+        {integrantes.map((integrante, index) => (
           <View key={index} style={styles.memberCard}>
             <View style={styles.memberNumber}>
               <Text style={styles.memberNumberText}>{index + 1}</Text>
             </View>
-            <Text style={styles.memberName}>{nombre}</Text>
+            <View style={styles.memberData}>
+              <Text style={styles.memberName}>{integrante.nombre}</Text>
+              <Text style={styles.memberCode}>{integrante.codigo}</Text>
+            </View>
           </View>
         ))}
 
@@ -199,6 +207,16 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: '600',
     flex: 1,
+  },
+  memberData: {
+    flex: 1,
+  },
+  memberCode: {
+    marginTop: 4,
+    color: '#fda4af',
+    fontSize: 12,
+    fontWeight: '700',
+    letterSpacing: 0.4,
   },
 
   // Footer
