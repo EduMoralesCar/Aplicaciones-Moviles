@@ -67,7 +67,7 @@ export default function HomeScreen() {
 
         {/* Footer */}
         <View style={styles.footer}>
-          <Text style={styles.footerText}>Ciclo Académico 2024</Text>
+          <Text style={styles.footerText}>Ciclo Académico 2026 - Semestre II</Text>
         </View>
       </ScrollView>
     </View>
