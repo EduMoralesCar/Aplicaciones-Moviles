@@ -41,7 +41,7 @@ Aplicacion React Native creada con Expo para agregar, editar y eliminar tareas.
 - `package-lock.json`: versiones y registro de instalacion.
 - `README.md`: documentacion del proyecto.
 
-## Validacion
+## Validación
 
 - La sintaxis JSX de `App01.js` fue comprobada correctamente.
 - No se encontraron errores de diagnostico en `App01.js`.
@@ -61,3 +61,5 @@ npm run android
 ```
 
 > Expo inicia actualmente `App.js` como archivo principal. Para probar la pantalla con persistencia, `App01.js` debe conectarse desde `App.js` o configurarse como entrada de la aplicacion.
+
+---
