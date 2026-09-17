@@ -61,3 +61,4 @@ npm run android
 ```
 
 > Expo inicia actualmente `App.js` como archivo principal. Para probar la pantalla con persistencia, `App01.js` debe conectarse desde `App.js` o configurarse como entrada de la aplicacion.
+---
