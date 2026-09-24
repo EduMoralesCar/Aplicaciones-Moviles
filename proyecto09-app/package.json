@@ -13,7 +13,9 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "emulador": "C:\\Users\\edomo\\AppData\\Local\\Android\\Sdk\\emulator\\emulator.exe -avd TX",
+    "install:all": "npm install && npx expo install"
   },
   "private": true
 }
