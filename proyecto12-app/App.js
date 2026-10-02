@@ -15,6 +15,8 @@ import axios from 'axios';
 import { Ionicons, MaterialCommunityIcons, Feather } from '@expo/vector-icons';
 
 const API_URL = 'https://api.tvmaze.com/shows';
+// ERROR: 404 Not Found
+//const API_URL = 'https://api.tvmaze.com/shows21';
 
 export default function App() {
   const [shows, setShows] = useState([]);
