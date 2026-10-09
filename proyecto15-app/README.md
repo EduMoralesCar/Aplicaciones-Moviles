@@ -778,3 +778,5 @@ setCurrentUser(null);
 setCurrentScreen('login');
 ```
 - Borra la clave `@sesion_activa`, manteniendo guardados a los usuarios registrados pero requiriendo un nuevo inicio de sesión.
+
+---
