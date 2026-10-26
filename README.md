@@ -9,27 +9,6 @@ Repositorio centralizado con los proyectos prácticos, talleres de laboratorio y
 
 ---
 
-## 🏛️ Información Institucional
-
-| Campo | Detalle |
-| :--- | :--- |
-| **Universidad** | Universidad Tecnológica del Perú (UTP) |
-| **Facultad** | Facultad de Ingeniería |
-| **Carrera** | Ingeniería de Software |
-| **Curso** | Aplicaciones Móviles |
-| **Ciclo** | Octavo (VIII) |
-
-### 👥 Equipo de Desarrollo
-
-| N° | Estudiante | Código Institucional | Rol |
-| :---: | :--- | :---: | :--- |
-| **1** | Taypicahuana Montalvo Renzo Andre | `U23200248` | Desarrollador |
-| **2** | Morales Carlos Edu | `U23222093` | Desarrollador |
-| **3** | Hurtado Lorenzo Ronal Dany | `U20238833` | Desarrollador |
-| **4** | Gutiérrez Cuéllar Josué Ángel | `U23219921` | Desarrollador |
-
----
-
 ## 📂 Mapa de Proyectos y Prácticas
 
 A continuación se detalla cada una de las aplicaciones desarrolladas a lo largo de las sesiones de clase y talleres:
