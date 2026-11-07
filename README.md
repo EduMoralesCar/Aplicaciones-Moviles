@@ -35,8 +35,9 @@ A continuación se detalla cada una de las aplicaciones desarrolladas a lo largo
 * **[`proyecto14-app`](./proyecto14-app)**: Sistema CRUD completo de productos con almacenamiento persistente en memoria local (`AsyncStorage`), formulario de registro, edición modal, alertas de confirmación y listado dinámico.
 * **[`proyecto15-app`](./proyecto15-app)**: Sistema integral de gestión de cuentas y autenticación: registro con validación, inicio de sesión persistente, recuperación de credenciales y navegación entre vistas protegidas.
 
-### 5. Acceso a Hardware Nativo (Cámara)
+### 5. Acceso a Hardware Nativo, Sensores & Geolocalización
 * **[`proyecto16-app`](./proyecto16-app)**: Integración con la cámara del dispositivo móvil (`expo-camera` - CameraView), solicitud dinámica de permisos nativos, toma de fotografías en tiempo real y persistencia de la última imagen capturada en `AsyncStorage`.
+* **[`proyecto17-app`](./proyecto17-app)**: Localizador de estacionamiento de vehículos con geolocalización satelital (`expo-location`), renderizado de mapa interactivo (`react-native-maps`), cálculo de distancia y persistencia local de coordenadas en `AsyncStorage`.
 
 ### 6. Aplicaciones de Caso de Estudio & Expo Router
 * **[`GrupoSoftware`](./GrupoSoftware)**: Portal institucional desarrollado con **Expo Router** y navegación por pestañas (`(tabs)`). Presenta la ficha técnica del grupo, identidad visual oficial de la UTP y detalle de los integrantes.
@@ -57,7 +58,7 @@ El desarrollo de las aplicaciones hace uso de los siguientes componentes tecnol�
   * [Expo Router](https://docs.expo.dev/router/introduction/) (File-based routing)
   * [React Navigation](https://reactnavigation.org/) (Native Stack & Drawer)
 * **Almacenamiento Local**: `@react-native-async-storage/async-storage`
-* **Hardware & Sensores**: `expo-camera`
+* **Hardware, Sensores & Mapas**: `expo-camera`, `expo-location`, `react-native-maps`
 * **Peticiones HTTP**: `Axios` y `Fetch API`
 * **Iconografía & Estilos**: `@expo/vector-icons` (Ionicons, FontAwesome5, Feather, MaterialCommunityIcons)
 
@@ -81,9 +82,9 @@ El desarrollo de las aplicaciones hace uso de los siguientes componentes tecnol�
    cd Aplicaciones-Moviles
    ```
 
-2. **Acceder al directorio del proyecto deseado** (por ejemplo, `proyecto16-app` o `ventas-app`):
+2. **Acceder al directorio del proyecto deseado** (por ejemplo, `proyecto17-app` o `ventas-app`):
    ```bash
-   cd proyecto16-app
+   cd proyecto17-app
    ```
 
 3. **Instalar las dependencias**:
@@ -94,8 +95,8 @@ El desarrollo de las aplicaciones hace uso de los siguientes componentes tecnol�
 4. **Iniciar el servidor de desarrollo de Expo**:
    ```bash
    npx expo start
-   # o
-   npm start
+   # o para proyectos con GPS / red local:
+   npx expo start --lan
    ```
 
 5. **Visualizar la app**:
@@ -125,6 +126,7 @@ El desarrollo de las aplicaciones hace uso de los siguientes componentes tecnol�
 | [`proyecto14-app`](./proyecto14-app) | Laboratorio | `AsyncStorage`, CRUD de productos persistente, `Alert.alert` |
 | [`proyecto15-app`](./proyecto15-app) | Laboratorio | `AsyncStorage`, Sistema de Autenticación (Login/Registro) |
 | [`proyecto16-app`](./proyecto16-app) | Laboratorio | `expo-camera`, `CameraView`, `AsyncStorage`, Permisos |
+| [`proyecto17-app`](./proyecto17-app) | Actividad Grupal | `expo-location`, `react-native-maps`, `AsyncStorage`, GPS |
 | [`GrupoSoftware`](./GrupoSoftware) | Institucional | `Expo Router`, Tab Navigation, Branding UTP |
 | [`MiPrimeraApp`](./MiPrimeraApp) | Aplicación | `Expo Router`, Biblioteca digital, UI personalizada |
 | [`ventas-app`](./ventas-app) | Actividad Grupal | `Expo Router`, Cálculos de sueldos, bonos y comisiones |
